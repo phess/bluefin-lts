@@ -1,6 +1,11 @@
 ---
 name: Build Image
 on:
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "10 1 * * TUE"  # Every Tuesday at 1:10am UTC
   workflow_call:
     inputs:
       image-name:
