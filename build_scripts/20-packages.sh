@@ -14,7 +14,6 @@ dnf -y install \
 	fpaste \
 	fzf \
 	gnome-disk-utility \
-	gnome-shell-extension-{dash-to-dock,caffeine} \
 	glow \
 	gum \
 	hplip \
@@ -29,7 +28,30 @@ dnf -y install \
 	tuned-ppd \
 	wireguard-tools \
 	wl-clipboard \
-	xhost
+	xhost \
+          at \
+          bcachefs-tools \
+          duperemove \
+          firefox \
+          git \
+          gnome-shell-extension-user-theme \
+          gnome-tweaks \
+          iptraf-ng \
+          krb5-workstation \
+          libvirt-daemon \
+          libvirt-daemon-driver-network \
+          libvirt-daemon-driver-nodedev \
+          libvirt-daemon-driver-qemu \
+          libvirt-daemon-driver-storage \
+          nmap \
+          qemu-kvm \
+          ripgrep \
+          tmux \
+	  yaru-theme \
+	  vim-default-editor
+          
+          
+
 
 # Everything that depends on external repositories should be after this.
 # Make sure to set them as disabled and enable them only when you are going to use their packages.
@@ -63,8 +85,8 @@ dnf -y --enablerepo copr:copr.fedorainfracloud.org:ublue-os:packages install \
 cp -avf /usr/etc/. /etc
 rm -rvf /usr/etc
 
-dnf -y copr enable ublue-os/staging
-dnf -y copr disable ublue-os/staging
+#dnf -y copr enable ublue-os/staging
+#dnf -y copr disable ublue-os/staging
 dnf -y --enablerepo copr:copr.fedorainfracloud.org:ublue-os:staging install \
 	-x gnome-extensions-app \
 	gnome-shell-extension-{appindicator,blur-my-shell,search-light,logo-menu,gsconnect}
