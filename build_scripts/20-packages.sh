@@ -25,15 +25,10 @@ dnf -y install \
 	rclone \
 	restic \
 	system-reinstall-bootc \
-	tuned-ppd \
 	wireguard-tools \
 	wl-clipboard \
-	xhost \
-          at \
-          bcachefs-tools \
           duperemove \
           firefox \
-          git \
           gnome-shell-extension-user-theme \
           gnome-tweaks \
           iptraf-ng \
@@ -46,9 +41,7 @@ dnf -y install \
           nmap \
           qemu-kvm \
           ripgrep \
-          tmux \
-	  yaru-theme \
-	  vim-default-editor
+          tmux
           
           
 
