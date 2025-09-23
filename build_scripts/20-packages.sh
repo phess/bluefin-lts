@@ -78,8 +78,8 @@ dnf -y --enablerepo copr:copr.fedorainfracloud.org:ublue-os:packages install \
 cp -avf /usr/etc/. /etc
 rm -rvf /usr/etc
 
-#dnf -y copr enable ublue-os/staging
-#dnf -y copr disable ublue-os/staging
+dnf -y copr enable ublue-os/staging
+dnf -y copr disable ublue-os/staging
 dnf -y --enablerepo copr:copr.fedorainfracloud.org:ublue-os:staging install \
 	-x gnome-extensions-app \
 	gnome-shell-extension-{appindicator,blur-my-shell,search-light,logo-menu,gsconnect}
